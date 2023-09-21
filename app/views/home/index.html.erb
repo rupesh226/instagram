@@ -1,2 +1,4 @@
-<h1>Home - Rupesh</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>This is the Home Page!</h1>
+<% if current_user %>
+<%= button_to  "Sing out", destroy_user_session_path, method: :delete %>
+<% end %>
